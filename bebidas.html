@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Le Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para la página de Bebidas */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e1; /* Fondo amarillo suave */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F4A300; /* Naranja suave */
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #F4A300; /* Naranja suave */
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #F4A300; /* Naranja suave */
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .bebidas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .bebida {
+            background-color: #fff;
+            border: 2px solid #F4A300;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 280px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .bebida img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .bebida h3 {
+            margin-top: 15px;
+            font-size: 1.4em;
+            color: #F4A300;
+        }
+
+        .bebida p {
+            font-size: 1em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .bebida:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #F4A300;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Le Café</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="platillos.html">Platillos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Horarios.html">Horarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bebidas</h2>
+        <div class="bebidas-container">
+            <div class="bebida">
+                <img src="cafenegro.jpg" alt="Café Negro">
+                <h3>Café Negro</h3>
+                <p>Ingredientes: Café de grano 100%, agua purificada.</p>
+            </div>
+
+            <div class="bebida">
+                <img src="capucchino.jpg" alt="Capuccino">
+                <h3>Capuccino</h3>
+                <p>Ingredientes: Café expreso, leche vaporizada, espumita de leche.</p>
+            </div>
+
+            <div class="bebida">
+                <img src="chocolate.jpg" alt="Chocolate Caliente">
+                <h3>Chocolate Caliente</h3>
+                <p>Ingredientes: Chocolate de alta calidad, leche, azúcar.</p>
+            </div>
+
+            <div class="bebida">
+                <img src="chocolatebco.jpg" alt="Chocolate Blanco">
+                <h3>Chocolate Blanco</h3>
+                <p>Ingredientes: Chocolate blanco, leche, azúcar.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Le Café. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

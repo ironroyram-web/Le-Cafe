@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* HEADER */
+    header {
+      background-color: rgba(244, 163, 0, 0.95);
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      font-family: 'Times New Roman', serif;
+      letter-spacing: 2px;
+    }
+
+    /* NAVIGATION MENU */
+    nav {
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #F4A300;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      min-height: 70vh;
+    }
+
+    .horario-box {
+      background-color: #F4A300;
+      color: #fff;
+      font-size: 1.5em;
+      font-family: 'Georgia', serif;
+      padding: 30px 40px;
+      margin: 20px 0;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: rgba(244, 163, 0, 0.95);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Horario</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="platillos.html">Platillos</a></li>
+        <li><a href="bebidas.html">Bebidas</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="menu.html">Menú</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="horario-box">
+      Lunes - Viernes: 9:00am - 8:00pm
+    </div>
+    <div class="horario-box">
+      Sábado y Domingo: 9:00am - 1:00pm
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Le Café. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

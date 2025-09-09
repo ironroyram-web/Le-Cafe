@@ -1,0 +1,222 @@
+<div style="
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80'); 
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: 30px;
+">
+  <form
+    action="https://formspree.io/f/mgvzjvqp"
+    method="POST"
+    style="
+      max-width: 600px;
+      background: rgba(255, 250, 240, 0.95);
+      border-radius: 12px;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      border: 2px solid #f2e4d5;
+    "
+  >
+    <h2 style="text-align:center; color: #b34700; margin-bottom: 10px;">🍽️ ¡Déjanos Saborear Tus Ideas!</h2>
+    <p style="text-align:center; color: #7a5c41; font-size: 15px;">
+      ¿Tienes una receta, sugerencia o consulta culinaria? ¡Queremos leerla! 🧑‍🍳✨
+    </p>
+
+    <label style="display:block; margin-top: 20px; color: #5c3b1e; font-weight: bold;">
+      📧 Tu correo electrónico:
+      <input 
+        type="email" 
+        name="email" 
+        required 
+        placeholder="ejemplo@correo.com"
+        style="
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #dab89c;
+          border-radius: 8px;
+          background: #fffdf9;
+        "
+      >
+    </label>
+
+    <label style="display:block; margin-top: 20px; color: #5c3b1e; font-weight: bold;">
+      ✍️ Tu mensaje o receta:
+      <textarea 
+        name="message" 
+        required 
+        placeholder="Comparte tu receta secreta o una consulta culinaria..."
+        style="
+          width: 100%;
+          height: 130px;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #dab89c;
+          border-radius: 8px;
+          background: #fffdf9;
+          resize: vertical;
+        "
+      ></textarea>
+    </label>
+
+    <label style="display:block; margin-top: 20px; color: #5c3b1e; font-weight: bold;">
+      🍽️ Nombre del platillo (opcional):
+      <input 
+        type="text" 
+        name="dish"
+        placeholder="Ej. Ceviche de camarón"
+        style="
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #dab89c;
+          border-radius: 8px;
+          background: #fffdf9;
+        "
+      >
+    </label>
+
+    <!-- Tipo de consulta -->
+    <label style="display:block; margin-top: 20px; color: #5c3b1e; font-weight: bold;">
+      ❓ ¿Qué tipo de consulta estás realizando?
+      <select 
+        name="consulta_tipo" 
+        required
+        style="
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #dab89c;
+          border-radius: 8px;
+          background: #fffdf9;
+          font-size: 15px;
+          color: #5c3b1e;
+        "
+      >
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="receta">Consulta de receta</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="queja">Queja</option>
+        <option value="otro">Otro</option>
+      </select>
+    </label>
+
+    <!-- Sugerencias y Quejas (texto adicional) -->
+    <label style="display:block; margin-top: 20px; color: #5c3b1e; font-weight: bold;">
+      📝 Sugerencias y Quejas (opcional):
+      <textarea 
+        name="sugerencias_quejas" 
+        placeholder="Si tienes algo que decirnos, escríbelo aquí..."
+        style="
+          width: 100%;
+          height: 100px;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #dab89c;
+          border-radius: 8px;
+          background: #fffdf9;
+          resize: vertical;
+          font-size: 14px;
+        "
+      ></textarea>
+    </label>
+
+    <!-- Calificación estrellas 0 a 5 -->
+    <fieldset style="margin-top: 25px; border: none; color: #5c3b1e; font-weight: bold;">
+      <legend>⭐ Califica nuestro servicio (0 a 5 estrellas):</legend>
+      <div style="display: flex; gap: 10px; font-size: 24px; cursor: pointer; user-select: none;">
+        <label>
+          <input type="radio" name="calificacion" value="0" style="display:none;" required>
+          <span title="0 estrellas" style="color:#ccc;">☆</span>
+        </label>
+        <label>
+          <input type="radio" name="calificacion" value="1" style="display:none;">
+          <span title="1 estrella" style="color:#d35400;">★</span>
+        </label>
+        <label>
+          <input type="radio" name="calificacion" value="2" style="display:none;">
+          <span title="2 estrellas" style="color:#d35400;">★★</span>
+        </label>
+        <label>
+          <input type="radio" name="calificacion" value="3" style="display:none;">
+          <span title="3 estrellas" style="color:#d35400;">★★★</span>
+        </label>
+        <label>
+          <input type="radio" name="calificacion" value="4" style="display:none;">
+          <span title="4 estrellas" style="color:#d35400;">★★★★</span>
+        </label>
+        <label>
+          <input type="radio" name="calificacion" value="5" style="display:none;">
+          <span title="5 estrellas" style="color:#d35400;">★★★★★</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <!-- Botón Regresar -->
+    <button 
+      type="button" 
+      onclick="window.location.href='index.html';"
+      style="
+        margin-top: 20px;
+        width: 100%;
+        background-color: #3498db;
+        color: white;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#2980b9'"
+      onmouseout="this.style.backgroundColor='#3498db'"
+    >
+      🔙 Regresar
+    </button>
+
+    <!-- Botón Enviar -->
+    <button 
+      type="submit"
+      style="
+        margin-top: 20px;
+        width: 100%;
+        background-color: #d35400;
+        color: white;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#b84300'"
+      onmouseout="this.style.backgroundColor='#d35400'"
+    >
+      🍷 Enviar mi sazón
+    </button>
+
+    <p style="text-align:center; margin-top: 20px; font-size: 13px; color: #a37a59;">
+      Tu mensaje será enviado a nuestro chef: <strong>ramsesaguilar012@gmail.com</strong>
+    </p>
+  </form>
+</div>
+
+<script>
+  // Script para mostrar estrellas dinámicas al hacer hover y click
+  const starsLabels = document.querySelectorAll('fieldset div label span');
+  starsLabels.forEach((star, idx) => {
+    star.parentElement.addEventListener('mouseenter', () => {
+      for(let i=0; i<=idx; i++) {
+        starsLabels[i].style.color = '#d35400';
+        starsLabels[i].textContent = '★';
+      }
+      for(let j=idx+1; j<starsLabels.length; j++) {
+        starsLabels[j].style.color = '#ccc';
+        starsLabels[j].textContent = '☆';
+      }
+    });
+    star.parentElement.addEventListener('
